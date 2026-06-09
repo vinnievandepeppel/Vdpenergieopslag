@@ -4,7 +4,7 @@ import { useState } from 'react';
 import type { ReactNode } from 'react';
 
 const GOOGLE_SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbzMqLAWnyH4vN8HeQpis4BHgOmRwMIobpeyXbxzijmza2AoBvGJMUtJnXvusVF1feb4Aw/exec';
+  'https://script.google.com/macros/s/AKfycbwZHW5odkvE0n6Dm_edC9ksWiz5Pc6VPvn48hA95kpOoYtdhJEG29Yc0bL4jh7Xpt4wiA/exec';
 
 type Answers = {
   solar: string;
