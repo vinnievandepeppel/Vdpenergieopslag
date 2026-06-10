@@ -163,7 +163,7 @@ export default function Home() {
 
 <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
   <img
-    src="/hero-energieopslag.png"
+    src="/Hero huawei.png"
     alt="Slim energiebeheer met thuisaccu"
     className="h-[600px] w-full object-cover"
   />
