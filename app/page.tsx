@@ -134,6 +134,11 @@ export default function Home() {
         <section className="min-h-screen flex items-center px-6 py-20">
           <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2">
             <div>
+              <img
+  src="/vdp-logo-goud.png"
+  alt="VDP Dakbedekking"
+  className="mb-8 h-20 w-auto"
+/>
               <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#C8A96B]">
                 Energieopslagscan
               </p>
