@@ -157,11 +157,11 @@ export default function Home() {
             </div>
 
             <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop"
-                alt="Zonnepanelen woning"
-                className="h-[600px] w-full object-cover opacity-80"
-              />
+             <img
+  src="/vdp-logo-goud.png"
+  alt="VDP Dakbedekking"
+  className="h-auto w-auto"
+/>
 
               <div className="absolute bottom-8 left-8 right-8 rounded-2xl border border-[#C8A96B]/20 bg-black/70 p-6 backdrop-blur">
                 <p className="mb-2 text-sm uppercase tracking-widest text-[#C8A96B]">
