@@ -430,7 +430,7 @@ export default function Home() {
   <img
     src="/advies header.png"
     alt="Energieopslag"
-    className="h-full min-h-[900px] w-full object-cover"
+    className="h-full min-h-[900px] w-full object-contain bg-[#171A21] p-2"
   />
 </div>
           </div>
