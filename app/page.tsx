@@ -137,7 +137,7 @@ export default function Home() {
               <img
   src="/vdp-logo-goud.png"
   alt="VDP Dakbedekking"
-  className="mb-8 h-20 w-auto"
+  className="mb-8 h-28 w-auto"
 />
               <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#C8A96B]">
                 Energieopslagscan
