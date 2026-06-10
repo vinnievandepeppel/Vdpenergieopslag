@@ -165,7 +165,7 @@ export default function Home() {
         <img
           src="/Hero huawei.png"
           alt="Slim energiebeheer met thuisaccu"
-          className="h-[600px] w-full object-cover"
+         className="h-[600px] w-full object-contain bg-[#171A21] p-4"
         />
       </div>
     </div>
