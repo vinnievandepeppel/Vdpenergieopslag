@@ -392,39 +392,42 @@ export default function Home() {
               </div>
 
               <div className="mb-8">
-                <h3 className="mb-6 text-3xl font-bold">
-                  Vergelijk passende systemen
-                </h3>
+  <h3 className="mb-6 text-3xl font-bold">
+    Vergelijk passende systemen
+  </h3>
 
-                <div className="grid gap-6">
-                  <SystemCard
-                    brand="SolarEdge"
-                    title="SolarEdge Home Battery"
-                    price="Indicatie vanaf €6.500 – €9.500"
-                    description="Sterk premium ecosysteem met uitgebreide monitoring en perfecte integratie met SolarEdge omvormers."
-                    selected={selectedSystem === 'SolarEdge Home Battery'}
-                    onClick={() => setSelectedSystem('SolarEdge Home Battery')}
-                  />
+  <div className="grid gap-6">
+    <SystemCard
+      brand="SolarEdge"
+      title="SolarEdge Home Battery"
+      image="/Solaredge thuisbattery.png"
+      price="Indicatie vanaf €6.500 – €9.500"
+      description="Premium thuisaccu met uitgebreide monitoring en sterke integratie met SolarEdge omvormers."
+      selected={selectedSystem === 'SolarEdge Home Battery'}
+      onClick={() => setSelectedSystem('SolarEdge Home Battery')}
+    />
 
-                  <SystemCard
-                    brand="Huawei"
-                    title="Huawei LUNA2000"
-                    price="Indicatie vanaf €5.500 – €8.500"
-                    description="Modulair batterijsysteem met moderne uitstraling en goede integratie binnen Huawei installaties."
-                    selected={selectedSystem === 'Huawei LUNA2000'}
-                    onClick={() => setSelectedSystem('Huawei LUNA2000')}
-                  />
+    <SystemCard
+      brand="Huawei"
+      title="Huawei LUNA2000"
+      image="/Huawei luna 2000 thuisbattery.png"
+      price="Indicatie vanaf €5.500 – €8.500"
+      description="Modulair batterijsysteem met moderne uitstraling en goede integratie binnen Huawei installaties."
+      selected={selectedSystem === 'Huawei LUNA2000'}
+      onClick={() => setSelectedSystem('Huawei LUNA2000')}
+    />
 
-                  <SystemCard
-                    brand="Sigenergy"
-                    title="Sigenergy SigenStor"
-                    price="Indicatie vanaf €7.000 – €12.000"
-                    description="Modern all-in-one energiesysteem met slimme sturing, uitbreidbaarheid en premium uitstraling."
-                    selected={selectedSystem === 'Sigenergy SigenStor'}
-                    onClick={() => setSelectedSystem('Sigenergy SigenStor')}
-                  />
-                </div>
-              </div>
+    <SystemCard
+      brand="Sigenergy"
+      title="Sigenergy SigenStor"
+      image="/Sigenergy thuisbattery.png"
+      price="Indicatie vanaf €7.000 – €12.000"
+      description="Modern all-in-one energiesysteem met slimme sturing, uitbreidbaarheid en premium uitstraling."
+      selected={selectedSystem === 'Sigenergy SigenStor'}
+      onClick={() => setSelectedSystem('Sigenergy SigenStor')}
+    />
+  </div>
+</div>
 
               <button
                 onClick={() => setStep(7)}
@@ -679,6 +682,7 @@ function ResultCard({ title, value }: { title: string; value: string }) {
 function SystemCard({
   brand,
   title,
+  image,
   price,
   description,
   selected,
@@ -686,6 +690,7 @@ function SystemCard({
 }: {
   brand: string;
   title: string;
+  image: string;
   price: string;
   description: string;
   selected: boolean;
@@ -694,27 +699,35 @@ function SystemCard({
   return (
     <button
       onClick={onClick}
-      className={`rounded-2xl border p-6 text-left transition ${
+      className={`overflow-hidden rounded-2xl border text-left transition ${
         selected
-          ? 'border-[#C8A96B] bg-[#C8A96B]/10'
+          ? 'border-[#C8A96B] bg-[#C8A96B]/10 shadow-2xl'
           : 'border-[#C8A96B]/20 bg-white/5 hover:border-[#C8A96B] hover:bg-white/10'
       }`}
     >
-      <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#C8A96B]">
-        {brand}
-      </p>
+      <img
+        src={image}
+        alt={title}
+        className="h-56 w-full object-cover"
+      />
 
-      <h4 className="mb-4 text-2xl font-bold">{title}</h4>
-
-      <p className="mb-4 text-xl font-bold text-[#C8A96B]">{price}</p>
-
-      <p className="text-sm leading-6 text-gray-300">{description}</p>
-
-      {selected && (
-        <p className="mt-5 rounded-xl bg-[#C8A96B] px-4 py-3 text-center text-sm font-bold text-black">
-          Geselecteerd
+      <div className="p-6">
+        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#C8A96B]">
+          {brand}
         </p>
-      )}
+
+        <h4 className="mb-3 text-2xl font-bold">{title}</h4>
+
+        <p className="mb-4 text-xl font-bold text-[#C8A96B]">{price}</p>
+
+        <p className="text-sm leading-6 text-gray-300">{description}</p>
+
+        {selected && (
+          <p className="mt-5 rounded-xl bg-[#C8A96B] px-4 py-3 text-center text-sm font-bold text-black">
+            Geselecteerd
+          </p>
+        )}
+      </div>
     </button>
   );
 }
