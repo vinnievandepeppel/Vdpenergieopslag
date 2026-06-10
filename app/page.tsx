@@ -161,17 +161,16 @@ export default function Home() {
               </button>
             </div>
 
-<div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
-  <img
-    src="/Hero huawei.png"
-    alt="Slim energiebeheer met thuisaccu"
-    className="h-[600px] w-full object-cover"
-  />
-</div>
-            </div>
-          </div>
-        </section>
-      )}
+ <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
+        <img
+          src="/Hero huawei.png"
+          alt="Slim energiebeheer met thuisaccu"
+          className="h-[600px] w-full object-cover"
+        />
+      </div>
+    </div>
+  </section>
+)}
 
       {step > 0 && step < totalSteps && (
         <section className="min-h-screen flex items-center px-6 py-20">
