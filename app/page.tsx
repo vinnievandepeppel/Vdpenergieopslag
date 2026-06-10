@@ -161,22 +161,13 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
-<img
-  src="/huawei-luna2000.png"
-  alt="Huawei LUNA2000 thuisaccu"
-  className="h-[600px] w-full object-contain p-10 opacity-100"
-/>
-/>
-
-              <div className="absolute bottom-8 left-8 right-8 rounded-2xl border border-[#C8A96B]/20 bg-black/70 p-6 backdrop-blur">
-                <p className="mb-2 text-sm uppercase tracking-widest text-[#C8A96B]">
-                  Slim energiebeheer
-                </p>
-                <p className="text-2xl font-bold">
-                  Meer rendement uit uw zonne-energie
-                </p>
-              </div>
+<div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
+  <img
+    src="/hero-energieopslag.png"
+    alt="Slim energiebeheer met thuisaccu"
+    className="h-[600px] w-full object-cover"
+  />
+</div>
             </div>
           </div>
         </section>
