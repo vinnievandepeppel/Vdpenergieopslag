@@ -428,7 +428,7 @@ export default function Home() {
 
             <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
   <img
-    src="/energie opslag header.png"
+    src="/advies header.png"
     alt="Energieopslag"
     className="h-full min-h-[900px] w-full object-cover"
   />
