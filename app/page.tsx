@@ -163,9 +163,9 @@ export default function Home() {
 
             <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
              <img
-  src="/vdp-logo-goud.png"
-  alt="VDP Dakbedekking"
-  className="h-auto w-auto"
+  src="/huawei-luna2000.png"
+  alt="Huawei LUNA2000 thuisaccu"
+  className="h-[600px] w-full object-contain p-10"
 />
 
               <div className="absolute bottom-8 left-8 right-8 rounded-2xl border border-[#C8A96B]/20 bg-black/70 p-6 backdrop-blur">
