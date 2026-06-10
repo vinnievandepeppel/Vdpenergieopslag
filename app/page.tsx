@@ -163,7 +163,7 @@ export default function Home() {
 
             <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
              <img
-  src="/huawei-luna2000.png"
+  src="/public/accu huawei.png"
   alt="Huawei LUNA2000 thuisaccu"
   className="h-[600px] w-full object-contain p-10"
 />
