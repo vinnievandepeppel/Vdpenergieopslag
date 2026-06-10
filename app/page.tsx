@@ -177,14 +177,12 @@ export default function Home() {
     <p>✓ Vrijblijvende offerte op maat</p>
   </div>
 
-  <div className="rounded-2xl border border-[#C8A96B]/20 bg-black/30 p-6">
-    <p className="mb-2 text-sm text-gray-400">
-      Advies op basis van uw scan
-    </p>
-    <p className="text-3xl font-bold text-[#C8A96B]">
-      {recommendedBattery}
-    </p>
-  </div>
+  <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
+  <img
+    src="/energie opslag header.png"
+    alt="Energieopslag"
+    className="h-[600px] w-full object-cover"
+  />
 </div>
     </div>
   </section>
@@ -444,30 +442,12 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] p-8 shadow-2xl">
-  <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#C8A96B]">
-    Uw vervolgstap
-  </p>
-
-  <h3 className="mb-6 text-4xl font-bold">
-    Van indicatie naar persoonlijk advies
-  </h3>
-
-  <div className="mb-8 space-y-4 text-gray-300">
-    <p>✓ Controle van uw verbruik en teruglevering</p>
-    <p>✓ Advies voor Huawei, SolarEdge of Sigenergy</p>
-    <p>✓ Indicatie van investering en rendement</p>
-    <p>✓ Vrijblijvende offerte op maat</p>
-  </div>
-
-  <div className="rounded-2xl border border-[#C8A96B]/20 bg-black/30 p-6">
-    <p className="mb-2 text-sm text-gray-400">
-      Advies op basis van uw scan
-    </p>
-    <p className="text-3xl font-bold text-[#C8A96B]">
-      {recommendedBattery}
-    </p>
-  </div>
+            <div className="relative overflow-hidden rounded-[2rem] border border-[#C8A96B]/20 bg-[#171A21] shadow-2xl">
+  <img
+    src="/energie opslag header.png"
+    alt="Energieopslag"
+    className="h-full min-h-[900px] w-full object-cover"
+  />
 </div>
           </div>
         </section>
